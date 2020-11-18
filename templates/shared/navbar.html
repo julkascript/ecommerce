@@ -2,7 +2,7 @@
     <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+        <a class="navbar-brand waves-effect" href="{% url 'home' %}">
             <strong class="blue-text">E-store</strong>
         </a>
 
@@ -24,7 +24,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect"
-                       href="https://mdbootstrap.com/docs/jquery/" target="_blank">About</a>
+                       href="{% url 'about page' %}">About</a>
                 </li>
                 {#                two li items#}
                 {#                <li class="nav-item">#}
@@ -42,9 +42,13 @@
             <!-- Right -->
             <ul class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
+                    <a class="nav-link waves-effect" href="{% url 'sign in' %}">Sign in
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link waves-effect" href="{% url 'cart page' %}">
-{#                        #TODO: shopping items count #}
-{#                        <span class="badge red z-depth-1 mr-1"> 1 </span>#}
+                        {#                        #TODO: shopping items count #}
+                        {#                        <span class="badge red z-depth-1 mr-1"> 1 </span>#}
                         <i class="fas fa-shopping-cart"></i>
                         <span class="clearfix d-none d-sm-inline-block"> Cart </span>
                     </a>
@@ -59,13 +63,13 @@
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
-{#                <li class="nav-item">#}
-{#                    <a href="https://github.com/mdbootstrap/bootstrap-material-design"#}
-{#                       class="nav-link border border-light rounded waves-effect"#}
-{#                       target="_blank">#}
-{#                        <i class="fab fa-github mr-2"></i>MDB GitHub#}
-{#                    </a>#}
-{#                </li>#}
+                {#                <li class="nav-item">#}
+                {#                    <a href="https://github.com/mdbootstrap/bootstrap-material-design"#}
+                {#                       class="nav-link border border-light rounded waves-effect"#}
+                {#                       target="_blank">#}
+                {#                        <i class="fab fa-github mr-2"></i>MDB GitHub#}
+                {#                    </a>#}
+                {#                </li>#}
             </ul>
         </div>
     </div>
